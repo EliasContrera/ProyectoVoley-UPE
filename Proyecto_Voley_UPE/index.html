@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Voley UPE</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body >
+    <div id="fondo"></div>
+        <!-- Incluyo la barra de navegación utilizando JavaScript -->
+    <div id="navbar-container"></div>
+
+    <!-- Modales de inicio de sesion y registro, los incluyo ocn javascript -->
+    <div id="modal-container"></div>
+
+
+    <!-- Carrusel de Fotos -->
+
+    <div id="CarruselFotos">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators text-center">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1" class=""></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+    
+            <div class="carousel-inner text-center text-white">
+                <div class="carousel-item active text-center">
+                    <img src="./imagenes/goku.jpg" alt="" class="d-block w-100 mx-auto">
+                    <div class="carousel-caption">
+                        <h3>Título de la Noticia 1</h3>
+                        <p>Descripción de la noticia 1.</p>
+                    </div>
+                </div>
+                <div class="carousel-item text-center">
+                    <img src="./imagenes/gogeta.jpg" alt="Chicago" class="d-block w-100 mx-auto">
+                    <div class="carousel-caption">
+                        <h3>Título de la Noticia 2</h3>
+                        <p>Descripción de la noticia 2.</p>
+                    </div>
+                </div>
+                <div class="carousel-item text-center">
+                    <img src="./imagenes/vegeta.jpg" alt="New York" class="d-block w-100 mx-auto">
+                    <div class="carousel-caption">
+                        <h3>Título de la Noticia 3</h3>
+                        <p>Descripción de la noticia 3.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <button class="carousel-control-prev btn btn-secondary" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next btn btn-primary" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div><br>
+
+        <!-- Apartado de Noticias -->
+        <div class="container mt-5" id="noticias">
+            <div class="row">
+                <!-- Noticia 1 -->
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <img class="imagen" src="./imagenes/medalla.jpg" alt="medalla">
+                        <div class="texto-superpuesto">
+                            <h3>La UPE presente - JUAR 2023</h3>
+                            <p>La Secretaria de Extensión y Bienestar Universitario de la UPE, Lic. Ayelén Rocha...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Noticia 2 -->
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <img class="imagen" src="./imagenes/jupla.jpg" alt="jupla">
+                        <div class="texto-superpuesto">
+                            <h3>La UPE en los Juegos JUPLA 2022</h3>
+                            <p>La UPE participó de la edición 2022 de los Juegos Universitarios de Playa (JUPLA),...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Noticia 3 -->
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <img src="./imagenes/juar2023.jpg" alt="juar2023" class="imagen">
+                        <div class="texto-superpuesto">
+                            <h3>Reconocimiento a Deportistas de la UPE</h3>
+                            <p>En el día de hoy se reconoció a los y las deportistas de la Universidad Provincial de Ezeiza...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Noticia 4 -->
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <img src="./imagenes/salud.jpg" alt="jupla" class="imagen">
+                        <div class="texto-superpuesto">
+                            <h3>Semana de la Salud y el Deporte en la UPE</h3>
+                            <p>La Semana de la Salud y el Deporte se lleva a cabo en la UPE del lunes 27 al viernes 31 de mayo...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botón "Ver más" -->
+            <div class="ver-mas">
+                <a href="noticias.html">Ver más</a>
+            </div>
+        </div>
+
+        <!-- Tabla de Posiciones -->
+        <div id="tablaposiciones">
+            <div class="container text-left text-color-white">
+                <!-- Contenedor flex para alinear horizontalmente -->
+                <div class="table-title-container d-flex justify-content-between align-items-center tabladepuntos">
+                    <h2>Tabla de Puntos</h2>
+                    <button class="arrow-button"><a href="ranking.html">Ver Todo &rarr;</a></span></button>
+                </div>
+            </div>
+
+            <div class="container text-center">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>POSICION</th>
+                                <th>EQUIPO</th>
+                                <th>PUNTOS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>UPE</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>UBA</td>
+                                <td>22</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>UTN</td>
+                                <td>18</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>UNLAM</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>UNAB</td>
+                                <td>12</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div> 
+
+        <!-- Incluyo el footer utilizando JavaScript -->
+    <div id="footer-container"></div>
+</body>
+</html>
