@@ -1,7 +1,7 @@
 /* Estilos generales */
 .container {
     position: relative;
-    width: 300px; /* Ajusta el ancho según tu diseño */
+    width: 300px; /* Ajusta el ancho */
 }
 
 /* Estilo para la imagen */
@@ -64,6 +64,12 @@ nav{
     z-index: 1000; /* Z-index para asegurarse de que esté por encima de otros elementos */
 }
 
+/*Estilo para el carrusel */
+.carrusel{
+    padding-top: 95px; /* Espacio con respecto a la barra de navegacion */
+}
+
+
 /* Estilos para el texto superpuesto */
 .carousel-caption {
     position: absolute;
@@ -100,8 +106,8 @@ nav{
 /* Estilo para el botón "Ver más" */
 .ver-mas {
     position: absolute;
-    top: 10px; /* Ajusta la posición vertical según tu diseño */
-    right: 10px; /* Ajusta la posición horizontal según tu diseño */
+    top: 20px; /* Ajusta la posición vertical */
+    right: 15px; /* Ajusta la posición horizontal */
 }
 
 .ver-mas a {
@@ -135,10 +141,10 @@ nav{
 /* Estilos para el botón de flecha */
 .arrow-button {
     font-size: 24px; /* Ajusta el tamaño de la fuente según tu preferencia */
-    background: none; /* Elimina cualquier fondo del botón si lo tienes */
-    border: none; /* Elimina cualquier borde del botón si lo tienes */
+    background: none; /* Elimina cualquier fondo del botón */
+    border: none; /* Elimina cualquier borde del botón */
     color: white; /* Cambia el color del texto a blanco */
-    text-decoration: none; /* Elimina cualquier subrayado del enlace si lo tienes */
+    text-decoration: none; /* Elimina cualquier subrayado del enlace */
 }
 
 /* Estilos para el cuerpo */
@@ -225,6 +231,7 @@ h1 {
     height: 100%;
     object-fit: cover; /* Ajusta la imagen para llenar el contenedor */
 }
+
 
 /* Estilos para la sección de comentarios */
 #comentarios {

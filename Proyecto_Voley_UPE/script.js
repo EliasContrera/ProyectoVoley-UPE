@@ -82,11 +82,11 @@ document.addEventListener('DOMContentLoaded', function () {
             let comentario = document.getElementById('comentario').value;
     
             // Crear un nuevo elemento de comentario
-            let newComment = document.createElement('li');
-            newComment.innerHTML = `<strong>${nombre}:</strong> ${comentario}`;
+            let NuevoComentario = document.createElement('li');
+            NuevoComentario.innerHTML = `<strong>${nombre}:</strong> ${comentario}`;
     
             // Agregar el nuevo comentario a la lista
-            commentList.appendChild(newComment);
+            commentList.appendChild(NuevoComentario);
     
             // Limpiar el formulario después de agregar el comentario
             commentForm.reset();
