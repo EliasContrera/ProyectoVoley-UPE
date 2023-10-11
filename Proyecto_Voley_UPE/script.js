@@ -1,4 +1,4 @@
-/////////////////// Cargar los modales usando modales.html utilizando JavaScript
+/////////////////// Cargar los modales desde modales.html utilizando JavaScript
 document.addEventListener('DOMContentLoaded', function () {
     // Obtener el contenedor de modales
     let modalContainer = document.getElementById('modal-container');
@@ -43,7 +43,7 @@ fetch('navbar.html')
         console.error('Error al cargar la barra de navegación:', error);
     });
 
-// Cargar el footer desde footer.html utilizando JavaScript
+/////////////////// Cargar el pie de pagina desde footer.html utilizando JavaScript
 let footerContainer = document.getElementById('footer-container');
 fetch('footer.html')
     .then(response => {
@@ -59,25 +59,26 @@ fetch('footer.html')
         footerContainer.innerHTML = data;
     })
     .catch(error => {
-        // Manejar errores si ocurren
+        // Manejar errores si es que ocurren
         console.error('Error al cargar el footer:', error);
     });
 
 
 
 //Comentarios para la seccion comentarios en Noticias.html
+//Nota a Futuro: Realizar validaciones para la seccion de formulario*
+
 document.addEventListener('DOMContentLoaded', function () {
-        // ...
     
-        // Obtener referencia al formulario y la lista de comentarios
-        let commentForm = document.getElementById('comment-form');
-        let commentList = document.getElementById('comment-list');
+        // Obtengo referencia al formulario y la lista de comentarios
+        let comentarioForm = document.getElementById('comentarios-form');
+        let comentarioLista = document.getElementById('lista-comentarios');
     
         // Agregar un evento de envío de formulario para manejar comentarios
-        commentForm.addEventListener('submit', function (e) {
-            e.preventDefault(); // Evita que el formulario se envíe normalmente
+        comentarioForm.addEventListener('submit', function (evento) {
+            evento.preventDefault(); // Evita que el formulario se envíe por default
     
-            // Obtener valores del formulario
+            // Obtengo valores del formulario
             let nombre = document.getElementById('nombre').value;
             let comentario = document.getElementById('comentario').value;
     
@@ -86,9 +87,45 @@ document.addEventListener('DOMContentLoaded', function () {
             NuevoComentario.innerHTML = `<strong>${nombre}:</strong> ${comentario}`;
     
             // Agregar el nuevo comentario a la lista
-            commentList.appendChild(NuevoComentario);
+            comentarioLista.appendChild(NuevoComentario);
     
             // Limpiar el formulario después de agregar el comentario
-            commentForm.reset();
+            comentarioForm.reset();
         });
-});   
+});  
+
+
+
+// Filtrar las filas de la tabla según la competencia seleccionada
+
+mostrarRanking(); //Llamo a la funcion para que se ejecute
+
+
+function mostrarRanking(){
+    function filtrarPorTipoCompetencia(tipoCompetencia) {
+        let filas = document.querySelectorAll('#MiTabla tbody tr');
+    
+        filas.forEach(fila => {
+            let tipo = fila.getAttribute('data-tipo-competencia');
+    
+            if (tipoCompetencia === 'todas' || tipo === tipoCompetencia) {
+                fila.style.display = '';
+            } else {
+                fila.style.display = 'none';
+            }
+        });
+    }
+    
+    // Obtener el elemento select para el filtro de tipo de competencia
+    let filtroTipoCompetencia = document.getElementById('tipoCompetencia');
+    
+    // Agregar un evento de cambio al select
+    filtroTipoCompetencia.addEventListener('change', () => {
+        let tipoSeleccionado = filtroTipoCompetencia.value;
+        filtrarPorTipoCompetencia(tipoSeleccionado);
+    });
+    
+    // Inicializar el filtro mostrando todos los tipos de competencia
+    filtrarPorTipoCompetencia('todas');
+}
+

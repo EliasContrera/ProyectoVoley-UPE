@@ -175,32 +175,36 @@ h1 {
     right: 10px; /* Ajusta la distancia desde la derecha */
 }
 
-.ranking {
-    width: 100%;
-    margin-top: 30px;
-    border-collapse: collapse;
-    border-radius: 8px;
-    text-align: center;
-}
 
 #miTabla th, td {
     padding: 15px;
     border-bottom: 1px solid #e0e0e0; /* Borde inferior de las celdas */
 }
 
-.tituloRanking h3 {
-    font-size: medium;
-}
-
+/* Estilos generales para .tituloRanking */
 .tituloRanking {
     background-color: white;
-    margin-top: 8%;
+    margin-top: 5%; /* Espacio desde la parte superior */
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center; 
+    text-align: center;
     width: 100%;
     max-width: 100%;
+}
+
+/* Media Query para pantallas mas chicas */
+@media (max-width: 768px) {
+    .tituloRanking{
+        margin-top: 20%; 
+    }
+}
+
+/* Media Query para pantallas mas grandes */
+@media (min-width: 769px) {
+    .tituloRanking {
+        margin-top: 8%; 
+    }
 }
 
 .table.ranking {

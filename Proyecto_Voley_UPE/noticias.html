@@ -10,7 +10,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="shortcut icon" href="../imagenes/pelota-de-voleibol.png" type="image/x-icon">
 </head>
 <body>
     <div id="fondo"></div>
@@ -92,7 +91,7 @@
             <div class="col-md-8">
                 <!-- Formulario para agregar comentarios -->
                 <h3>Agregar Comentario</h3>
-                <form id="comment-form">
+                <form id="comentarios-form">
                     <div class="form-group">
                         <label for="nombre">Nombre:</label>
                         <input type="text" class="form-control" id="nombre" placeholder="Tu Nombre" required>
@@ -110,22 +109,23 @@
         <div class="row mt-4">
             <div class="col-md-8">
                 <h3>Comentarios Recientes</h3>
-                <ul id="comment-list" class="list-unstyled">
-                    <!-- Los comentarios se agregarán aquí dinámicamente con JavaScript -->
+                <ul id="lista-comentarios" class="list-unstyled">
+                    <!-- Los comentarios se agregarán acá de forma dinámica con JavaScript -->
                 </ul>
 
             </div>
 
         </div>
-        <button type="button" class="btn btn-danger" name="report" id="report">Reportar Comentario</button>
+        <button type="button" class="btn btn-danger" name="report" id="report">Denunciar Comentario</button>
 
     </div>
     </div>
 
 
+    <footer>
+        <!-- Incluyo el footer utilizando JavaScript -->
+        <div id="footer-container"></div>
+    </footer>
 
-
-    <!-- Incluyo el footer utilizando JavaScript -->
-    <div id="footer-container"></div>
 </body>
 </html>
