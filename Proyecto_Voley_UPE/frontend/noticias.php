@@ -6,6 +6,7 @@
     <title>Noticias - Club Voley UPE</title>
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesNoticia.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
@@ -114,9 +115,7 @@
                 <ul id="lista-comentarios" class="list-unstyled">
                     <!-- Los comentarios se agregarán acá de forma dinámica con JavaScript -->
                 </ul>
-
             </div>
-
         </div>
         <button type="button" class="btn btn-danger" name="report" id="report">Denunciar Comentario</button>
 

@@ -81,7 +81,7 @@
 <body>
     <div id="fondo"></div>
     <!-- Incluyo la barra de navegación utilizando JavaScript -->
-    <div id="navbar-container"></div>
+    <div id="navbar-container" style="padding-top: 2%;"></div>
 
     <!-- Modales de inicio de sesion y registro, los incluyo ocn javascript -->
     <div id="modal-container"></div>

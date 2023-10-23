@@ -52,7 +52,7 @@
 
     // Realiza una consulta para obtener los datos de la noticia desde la base de datos
     $sql = "SELECT titulo, descripcion FROM noticia WHERE id = ?"; // Reemplaza 'id' por el nombre de tu columna de identificación
-    $idNoticia = 1; // Reemplaza esto por el ID de la noticia que deseas mostrar
+    $idNoticia = 5; // Reemplaza esto por el ID de la noticia que deseas mostrar
     $stmt = $conexion->prepare($sql);
     $stmt->bind_param("i", $idNoticia); // "i" indica que es un valor entero
 
@@ -77,9 +77,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <div id="fondo"></div>
+    <div id="fondo" st></div>
     <!-- Incluyo la barra de navegación utilizando JavaScript -->
-    <div id="navbar-container"></div>
+    <div id="navbar-container" style="padding-top: 2%;"></div>
 
     <!-- Modales de inicio de sesion y registro, los incluyo ocn javascript -->
     <div id="modal-container"></div>
